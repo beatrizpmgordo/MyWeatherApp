@@ -20,7 +20,79 @@
   </head>
   <body>
     <div class="container">
-      <h1>Hello World</h1>
+      <form id="search-bar">
+        <div class="row">
+          <div class="col-6">
+            <input
+              type="search"
+              placeholder="Enter city"
+              class="form-control"
+              id="city-input"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              id="search-button"
+              type="submit"
+              value="Search"
+              class="form-control btn btn-primary"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              id="current-button"
+              type="submit"
+              value="Current"
+              class="form-control btn btn-success"
+            />
+          </div>
+        </div>
+      </form>
+      <div class="weather-app">
+        <div class="row">
+          <div class="col-4">
+            <h1 id="city">Lisbon</h1>
+            <p id="current-time"></p>
+            <ul>
+              <li><span id="description">Cloudy</span></li>
+              <li>Humidity: <span id="humidity">79</span>%</li>
+              <li>Wind: <span id="wind">16</span>km/h</li>
+            </ul>
+          </div>
+          <div class="col-8">
+            <span
+              class="temperature"
+              id="temperature"
+              >20</span
+            >
+            <span class="units"><a id="celcius">°C</a> 🌧️</span>
+          </div>
+        </div>
+      </div>
+      <div class="weather-week">
+        <div class="row">
+          <div class="col-3">
+            <h5>Monday</h5>
+            <span class="weather-emoji"> 🌤️ </span>
+            <span class="week-temperature">24° / 17°</span>
+          </div>
+          <div class="col-3">
+            <h5>Tuesday</h5>
+            <span class="weather-emoji"> ☀️ </span>
+            <span class="week-temperature">27° / 17°</span>
+          </div>
+          <div class="col-3">
+            <h5>Wednesday</h5>
+            <span class="weather-emoji"> 🌤️ </span>
+            <span class="week-temperature">24° / 19°</span>>
+          </div>
+          <div class="col-3">
+            <h5>Thursday</h5>
+            <span class="weather-emoji"> 🌧️ </span>
+            <span class="week-temperature">23° / 17°</span>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>
