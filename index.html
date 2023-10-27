@@ -25,6 +25,7 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link
       rel="stylesheet"
       href="src/style.css"
@@ -64,20 +65,21 @@
       <div class="weather-app">
         <div class="row">
           <div class="col-4">
-            <h1 id="city">Lisbon</h1>
-            <p id="current-time">Friday 12:00</p>
-            <ul>
-              <li><span id="description">Cloudy</span></li>
-              <li>Humidity: <span id="humidity">79</span>%</li>
-              <li>Wind: <span id="wind">16</span>km/h</li>
-            </ul>
+            <div class="current-data">
+              <h1 id="city"></h1>
+              <p id="current-time">
+                Friday 12:00<br />
+                <span id="description"></span>
+              </p>
+              <ul>
+                <li>Precipitation: 0%</li>
+                <li>Humidity: <span id="humidity">79</span>%</li>
+                <li>Wind: <span id="wind">16</span>km/h</li>
+              </ul>
+            </div>
           </div>
           <div class="col-8">
-            <span
-              class="temperature"
-              id="temperature"
-              >20</span
-            >
+            <span id="temperature"></span>
             <span class="units"><a id="celcius">°C</a> | °F 🌧️</span>
           </div>
         </div>
