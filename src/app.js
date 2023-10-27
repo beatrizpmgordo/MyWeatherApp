@@ -6,6 +6,10 @@ function displayTemperature(response) {
   city.innerHTML = response.data.city;
   let description = document.querySelector("#description");
   description.innerHTML = response.data.condition.description;
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML = response.data.temperature.humidity;
+  let wind = document.querySelector("#wind");
+  wind.innerHTML = Math.round(response.data.wind.speed);
 }
 
 let apiKey = "f388b055e9fa4ta275o3155340404ccb";
