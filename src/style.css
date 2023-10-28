@@ -18,6 +18,16 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  position: relative;
+  margin-top: -10px;
+  width: 100px;
+}
+
 li:first-letter {
   text-transform: capitalize;
 }
@@ -26,10 +36,8 @@ p:first-letter {
   text-transform: capitalize;
 }
 
-img {
-  position: relative;
-  margin-top: -10px;
-  width: 100px;
+a:hover {
+  text-decoration: underline;
 }
 
 .weather-conditions {
@@ -82,4 +90,13 @@ img {
 .footer-note {
   font-size: 12px;
   text-align: center;
+}
+
+.col-8 .active {
+  color: #111;
+  cursor: default;
+}
+
+.col-8 .active:hover {
+  text-decoration: none;
 }
