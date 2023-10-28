@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  margin: 30px 30px 0;
+  margin: 50px 30px 0;
   font-size: 24px;
   font-weight: 100;
 }
@@ -26,6 +26,12 @@ p:first-letter {
   text-transform: capitalize;
 }
 
+img {
+  position: relative;
+  margin-top: -10px;
+  width: 100px;
+}
+
 .weather-conditions {
   margin: 20px 30px;
   padding: 0;
@@ -45,11 +51,9 @@ p:first-letter {
 }
 
 .col-8 {
-  position: relative;
-  left: 80px;
   display: block;
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 80px 50px;
   font-size: 40px;
   font-weight: 400;
 }
