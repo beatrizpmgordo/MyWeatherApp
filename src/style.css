@@ -58,33 +58,12 @@ a:hover {
   max-width: 600px;
 }
 
-.col-8 {
+.current-temperature {
   display: block;
   margin: 0 auto;
-  padding: 80px 50px;
+  padding: 80px 40px;
   font-size: 40px;
   font-weight: 400;
-}
-
-.weather-week {
-  border: 1px solid #dadde1;
-  padding: 15px;
-  margin: 20px auto;
-  border-radius: 10px;
-}
-
-.col-3 {
-  text-align: center;
-}
-
-.weather-emoji {
-  display: block;
-  margin: 0 auto;
-  font-size: 30px;
-}
-
-.week-temperature {
-  text-align: center;
 }
 
 .footer-note {
