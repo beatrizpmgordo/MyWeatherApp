@@ -15,7 +15,7 @@ function formatDate(timestamp) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Satuday",
+    "Saturday",
   ];
   let day = days[date.getDay()];
 
